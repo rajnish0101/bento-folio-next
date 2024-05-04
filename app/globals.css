@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary: #4770FF;
+	--black: #1A1F2C;
+	--light-black: #576076;
+	--white: #ffffff;
+	--dark-theme-bg: #000;
+	--dark-theme-black: #0E1018;
+	--dark-theme-white: #f0f2f5;
+	--dark-theme-light-white: rgba(240, 242, 245, 0.7);
+	--paragraph: #616670;
+	--background: #F0F2F5;
+	--font-weight: 400;
+	--line-height: 1.6em;
+	--transision: all 0.1s ease-out 0s;
+	--border: #DBDFE5;
+}
+
+body {
+	font-size: var(--font-size);
+	line-height: var(--line-height);
+	color: var(--black);
+	overflow-x: hidden;
+	background-color: var(--background);
+	padding: 24px 0 24px 0;
+	min-height: 100vh; 
+}
+
+.common-shape {
+	animation: rotateAnimation 60s infinite linear;
+}
+
+@keyframes rotateAnimation {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+		/* Rotates the element 360 degrees */
+	}
+}
+
+.navbar-main.show {
+	left: 0 !important;
+}
+
+.project-item .image .full-image-preview {
+	filter: drop-shadow(0 12px 12px rgba(26, 31, 44, 0.25));
+}
+
+.project-item .image:hover .full-image-preview {
+	visibility: visible;
+	opacity: 1;
+}
+
+header nav li a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 6px 14px !important;
+	border-radius: 8px;
+}
+
+header nav li a:hover {
+	background-color: var(--background);
+	color: var(--primary);
+}
+
+header nav li a svg {
+	height: 22px;
+	width: 22px;
+}
+
+header nav li a svg path {
+	stroke: var(--paragraph);
+
+}
+
+header nav li a:hover svg path {
+	stroke: var(--primary);
+}
+
+.about-title span {
+	color: var(--primary) !important;
+}
