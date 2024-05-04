@@ -20,9 +20,7 @@ export const Faq = () => {
 
     return (
         <div className='mt-12'>
-            <h2 className="text-[30px] font-custom-semibold text-black leading-[1.2em] mb-8">Frequently Asked Questions
-
-            </h2>
+            <h2 className="text-[30px] font-custom-semibold text-black leading-[1.2em] mb-8">Frequently Asked Questions</h2>
 
             {faqs.map(faq => (
                 <div className='my-4 border border-border rounded-lg'>
